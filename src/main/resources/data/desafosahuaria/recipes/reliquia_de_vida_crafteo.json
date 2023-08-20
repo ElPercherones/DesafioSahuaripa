@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_block"
+    },
+    "1": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "2": {
+      "item": "minecraft:gold_block"
+    },
+    "3": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "4": {
+      "item": "desafosahuaria:reliquia_sahuaripa"
+    },
+    "5": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "6": {
+      "item": "minecraft:gold_block"
+    },
+    "7": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "8": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "desafosahuaria:reliquia_de_vida",
+    "count": 1
+  }
+}

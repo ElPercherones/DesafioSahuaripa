@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "SahuaripaHardcoreDifficulty",
+    "description": "Set the difficulty of the hardcore",
+    "category": "UPDATES",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

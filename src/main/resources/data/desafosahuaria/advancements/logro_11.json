@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "desafosahuaria:textures/screens/witheredamethyst.png",
+    "icon": {
+      "item": "desafosahuaria:baston_de_amatista_2"
+    },
+    "title": {
+      "translate": "advancements.logro_11.title"
+    },
+    "description": {
+      "translate": "advancements.logro_11.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "logro_11": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  }
+}

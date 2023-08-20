@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "desafosahuaria:mejoradearmadura_4"
+    },
+    "title": {
+      "translate": "advancements.logro_5.title"
+    },
+    "description": {
+      "translate": "advancements.logro_5.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "logro_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "desafosahuaria:mejoradearmadura_4"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "desafosahuaria:logro_4"
+}

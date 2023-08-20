@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "desafosahuaria:block/hardcore_pot"
+    },
+    "facing=east": {
+      "model": "desafosahuaria:block/hardcore_pot",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "desafosahuaria:block/hardcore_pot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "desafosahuaria:block/hardcore_pot",
+      "y": 270
+    }
+  }
+}

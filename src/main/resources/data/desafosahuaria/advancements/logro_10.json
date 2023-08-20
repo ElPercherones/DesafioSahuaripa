@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "desafosahuaria:pescadodeoro"
+    },
+    "title": {
+      "translate": "advancements.logro_10.title"
+    },
+    "description": {
+      "translate": "advancements.logro_10.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "logro_10": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "desafosahuaria:pescadodeoro"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "desafosahuaria:logro_9"
+}

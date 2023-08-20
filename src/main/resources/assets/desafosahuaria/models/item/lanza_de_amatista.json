@@ -1,0 +1,7 @@
+{
+  "parent": "desafosahuaria:custom/lanzadeamatista2",
+  "textures": {
+    "1": "desafosahuaria:block/lanzadeamatista2",
+    "particle": "desafosahuaria:item/lanzadeamatista2"
+  }
+}

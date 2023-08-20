@@ -1,0 +1,953 @@
+{
+  "mod_elements": [
+    {
+      "name": "PitayadoradaPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitayadorada_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/PitayadoradaPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pitayadorada",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitayadorada",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/PitayadoradaItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/pitayadorada.json"
+        ]
+      }
+    },
+    {
+      "name": "Wandering",
+      "type": "villagertrade",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sahuariatrades",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Mejoradearmadura1",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejoradearmadura_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/mejoradearmadura_1.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/Mejoradearmadura1Item.java"
+        ]
+      }
+    },
+    {
+      "name": "PescadodeoroPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pescadodeoro_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/PescadodeoroPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pescadodeoro",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pescadodeoro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/PescadodeoroItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/pescadodeoro.json"
+        ]
+      }
+    },
+    {
+      "name": "ReliquiaDeVida",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_de_vida",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/ReliquiaDeVidaItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/reliquia_de_vida.json"
+        ]
+      }
+    },
+    {
+      "name": "Mejoradearmadura2",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejoradearmadura_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/Mejoradearmadura2Item.java",
+          "src/main/resources/assets/desafosahuaria/models/item/mejoradearmadura_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Mejoradearmadura3",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejoradearmadura_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/mejoradearmadura_3.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/Mejoradearmadura3Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Mejoradearmadura4",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejoradearmadura_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/Mejoradearmadura4Item.java",
+          "src/main/resources/assets/desafosahuaria/models/item/mejoradearmadura_4.json"
+        ]
+      }
+    },
+    {
+      "name": "ReliquiaSahuaripa",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_sahuaripa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/ReliquiaSahuaripaItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/reliquia_sahuaripa.json"
+        ]
+      }
+    },
+    {
+      "name": "BastonDeAmatista",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baston_de_amatista",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/BastonDeAmatistaItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/baston_de_amatista.json"
+        ]
+      }
+    },
+    {
+      "name": "HardcorePot",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardcore_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/blockstates/hardcore_pot.json",
+          "src/main/resources/assets/desafosahuaria/models/block/hardcore_pot.json",
+          "src/main/resources/assets/desafosahuaria/models/item/hardcore_pot.json",
+          "src/main/java/net/mcreator/desafosahuaria/block/HardcorePotBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LootTable1",
+      "type": "loottable",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_table_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/loot_tables/blocks/hardcore_pot.json"
+        ]
+      }
+    },
+    {
+      "name": "Mejora1",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/mejora_1.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "Mejora2",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/mejora_2.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "Mejora3",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/mejora_3.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "Mejora4",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/mejora_4.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "ReliquiaDeVidaCrafteo",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_de_vida_crafteo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/reliquia_de_vida_crafteo.json"
+        ]
+      }
+    },
+    {
+      "name": "ReliquiaDeVidaRightclicked",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_de_vida_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/ReliquiaDeVidaRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IllusionerSpawn",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illusioner_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/IllusionerSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Totem2",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Totem2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Logro1",
+      "type": "achievement",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro2",
+      "type": "achievement",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro3",
+      "type": "achievement",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_3.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro4",
+      "type": "achievement",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_4.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro5",
+      "type": "achievement",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_5.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro6",
+      "type": "achievement",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_6.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro7",
+      "type": "achievement",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_7.json"
+        ]
+      }
+    },
+    {
+      "name": "Totem",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/TotemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BastonDeAmatista2LivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baston_de_amatista_2_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/BastonDeAmatista2LivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BastonDeAmatista2",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baston_de_amatista_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/BastonDeAmatista2Item.java",
+          "src/main/resources/assets/desafosahuaria/models/item/baston_de_amatista_2.json"
+        ]
+      }
+    },
+    {
+      "name": "IllusionerLoot",
+      "type": "loottable",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illusioner_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/entities/illusioner.json"
+        ]
+      }
+    },
+    {
+      "name": "Pitaya",
+      "type": "item",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitaya",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/pitaya.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/PitayaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PitayaDoradaCrafteo",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitaya_dorada_crafteo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/pitaya_dorada_crafteo.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro8",
+      "type": "achievement",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_8.json"
+        ]
+      }
+    },
+    {
+      "name": "LanzaDeAmatista",
+      "type": "tool",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lanza_de_amatista",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/lanza_de_amatista.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/LanzaDeAmatistaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Logro9",
+      "type": "achievement",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_9.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro10",
+      "type": "achievement",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_10",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_10.json"
+        ]
+      }
+    },
+    {
+      "name": "EnderGhastSpawn",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_ghast_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/EnderGhastSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HardcoreDifficulty",
+      "type": "gamerule",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardcore_difficulty",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "PiglinConvertion",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglin_convertion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/PiglinConvertionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteUpgrade1",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_upgrade_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/netherite_upgrade_1.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "WitheredPiglin",
+      "type": "livingentity",
+      "sortid": 67,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "withered_piglin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/entity/WitheredPiglinEntity.java",
+          "src/main/java/net/mcreator/desafosahuaria/client/renderer/WitheredPiglinRenderer.java",
+          "src/main/resources/data/desafosahuaria/forge/biome_modifier/withered_piglin_biome_modifier.json",
+          "src/main/resources/assets/desafosahuaria/models/item/withered_piglin_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ReliquiaDeResurrecion",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_de_resurrecion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/ReliquiaDeResurrecionItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/reliquia_de_resurrecion.json"
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "Logro11",
+      "type": "achievement",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_11",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_11.json"
+        ]
+      }
+    },
+    {
+      "name": "Logo12",
+      "type": "achievement",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo_12",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logo_12.json"
+        ]
+      }
+    },
+    {
+      "name": "Deconstruccion",
+      "type": "potioneffect",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deconstruccion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/potion/DeconstruccionMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DeconstruccionEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deconstruccion_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/DeconstruccionEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeconstruccionEffectExpires",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deconstruccion_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/DeconstruccionEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesafioSahuaripa1",
+      "type": "tab",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desafio_sahuaripa_1",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DesafioSahuaripa2",
+      "type": "tab",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desafio_sahuaripa_2",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MejoraDeAmatista",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_de_amatista",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/mejora_de_amatista.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/MejoraDeAmatistaItem.java"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "advancements.logro_7.descr": "Gastaste un tótem sahuaripa",
+      "item.desafosahuaria.pescadodeoro": "Pescado marchito",
+      "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
+      "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
+      "advancements.logro_7.title": "Hipertensión++",
+      "item.desafosahuaria.pitaya": "Pitaya",
+      "advancements.logro_4.title": "Ya casi...",
+      "gamerule.spawnEnderGhast.description": "Habilita/Desahibilita spawneo de EnderGhast",
+      "entity.desafosahuaria.withered_piglin": "Withered Piglin",
+      "gamerule.spawnIllusioner": "IllusionerRaidSpawn",
+      "gamerule.spawnIllusioner.description": "Spawneo de illusioners en asaltos",
+      "gamerule.hardcoreDifficulty.description": "Set the difficulty of the hardcore",
+      "advancements.logro_11.descr": "Well-cum",
+      "advancements.logro_1.title": "Desafío Anexo Sahuaripa",
+      "item.desafosahuaria.mejoradearmadura_1": "Mejora de netherite",
+      "item.desafosahuaria.mejoradearmadura_2": "Mejora de netherite",
+      "item.desafosahuaria.mejoradearmadura_3": "Mejora de netherite",
+      "item.desafosahuaria.baston_de_amatista_2": "Bastón De Amatista",
+      "advancements.logro_8.title": "Uffas...",
+      "item.desafosahuaria.lanza_de_amatista": "Lanza De Amatista",
+      "item.desafosahuaria.mejoradearmadura_4": "Mejora de netherite",
+      "advancements.logro_3.descr": "Conseguiste la mejora netherite-oro",
+      "advancements.logo_12.title": "Mi espada es más grande...",
+      "block.desafosahuaria.hardcore_pot": "Hardcore Pot",
+      "advancements.logro_6.descr": "Utilizaste la reliquia de vida",
+      "effect.desafosahuaria.deconstruccion": "Deconstrucción",
+      "advancements.logro_5.descr": "Conseguiste la mejora de netherite-diamante",
+      "advancements.logro_9.descr": "Consumiste una pitaya dorada",
+      "advancements.logro_5.title": "Hipertensión+",
+      "advancements.logro_2.title": "Vamos avanzando...",
+      "item_group.desafosahuaria.desafio_sahuaripa_2": "Desafío Sahuaripa 2",
+      "gamerule.spawnEnderGhast": "SpawnEnderGhast",
+      "advancements.logro_10.title": "Emmm...",
+      "item.desafosahuaria.withered_piglin_spawn_egg": "Withered Piglin Spawn Egg",
+      "item_group.desafosahuaria.desafio_sahuaripa_1": "Desafío Sahuaripa 1",
+      "advancements.logro_10.descr": "Consumiste un pescado marchito",
+      "advancements.logro_2.descr": "Conseguiste la mejora de netherite-hierro",
+      "advancements.logro_1.descr": "Well-cum",
+      "advancements.logro_9.title": "Ahora si apareces...",
+      "item.desafosahuaria.reliquia_de_resurrecion": "Reliquia De Resurrecion",
+      "item.desafosahuaria.pitayadorada": "Pitaya Dorada",
+      "advancements.logro_8.descr": "Conseguiste el bastón de amatista",
+      "advancements.logro_4.descr": "Conseguiste la mejora de netherite-esmeralda",
+      "item.desafosahuaria.mejora_de_amatista": "Mejora De Amatista",
+      "item.desafosahuaria.reliquia_de_vida": "Reliquia De Vida",
+      "advancements.logro_6.title": "+5",
+      "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
+      "advancements.logro_3.title": "Fiebre de oro...",
+      "advancements.logro_11.title": "Desafío Sahuaripa v2",
+      "item.desafosahuaria.baston_de_amatista": "Bastón De Amatista"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mejoras",
+        "children": []
+      },
+      {
+        "name": "DesafioSahuaripa2",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "desafosahuaria",
+    "modName": "DesafíoSahuaria+",
+    "version": "1.8.0",
+    "description": "Complemento Desafío Anexo Sahuaripa",
+    "author": "ElPerches, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "reliquia_de_resurrecion",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Hecho por: ElPerches",
+    "modElementsPackage": "net.mcreator.desafosahuaria",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

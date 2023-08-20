@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "desafosahuaria:pitayadorada"
+    },
+    "title": {
+      "translate": "advancements.logro_9.title"
+    },
+    "description": {
+      "translate": "advancements.logro_9.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "logro_9": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "desafosahuaria:pitayadorada"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "desafosahuaria:logro_11"
+}
