@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "desafosahuaria:block/escombro_de_enderite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "desafosahuaria:block/escombro_de_enderite"
+    },
+    "axis=z": {
+      "model": "desafosahuaria:block/escombro_de_enderite",
+      "x": 90
+    }
+  }
+}

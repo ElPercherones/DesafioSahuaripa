@@ -43,12 +43,14 @@ public class DesafosahuariaModTabs {
 
 		);
 		event.registerCreativeModeTab(new ResourceLocation("desafosahuaria", "desafio_sahuaripa_2"),
-				builder -> builder.title(Component.translatable("item_group.desafosahuaria.desafio_sahuaripa_2")).icon(() -> new ItemStack(DesafosahuariaModItems.DELETED_MOD_ELEMENT.get())).displayItems((parameters, tabData) -> {
+				builder -> builder.title(Component.translatable("item_group.desafosahuaria.desafio_sahuaripa_2")).icon(() -> new ItemStack(DesafosahuariaModItems.MEJORA_DE_AMATISTA.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DesafosahuariaModItems.PITAYADORADA.get());
 					tabData.accept(DesafosahuariaModItems.PESCADODEORO.get());
 					tabData.accept(DesafosahuariaModItems.PITAYA.get());
 					tabData.accept(DesafosahuariaModItems.LANZA_DE_AMATISTA.get());
 					tabData.accept(DesafosahuariaModItems.MEJORA_DE_AMATISTA.get());
+					tabData.accept(DesafosahuariaModBlocks.ESCOMBRO_DE_ENDERITE.get().asItem());
+					tabData.accept(DesafosahuariaModItems.FRAGMENTO_DE_ENDERITE.get());
 				})
 
 		);

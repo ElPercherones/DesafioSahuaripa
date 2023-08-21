@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "1": {
+      "item": "desafosahuaria:fragmento_de_enderite"
+    },
+    "2": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "3": {
+      "item": "desafosahuaria:fragmento_de_enderite"
+    },
+    "4": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "5": {
+      "item": "desafosahuaria:fragmento_de_enderite"
+    },
+    "6": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "7": {
+      "item": "desafosahuaria:fragmento_de_enderite"
+    },
+    "8": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "desafosahuaria:mejora_de_amatista",
+    "count": 1
+  }
+}

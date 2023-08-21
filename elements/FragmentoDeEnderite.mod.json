@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "withered_shield_upgrade",
+    "texture": "enderitescrap",
     "customModelName": "Normal",
-    "name": "Mejora De Amatista",
+    "name": "Fragmento De Enderite",
     "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:DesafioSahuaripa2"
     },
-    "stackSize": 16,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": true,
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,

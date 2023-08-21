@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "desafosahuaria:block/enderite_top",
+    "up": "desafosahuaria:block/enderite_top",
+    "north": "desafosahuaria:block/enderite_side",
+    "east": "desafosahuaria:block/enderite_side",
+    "south": "desafosahuaria:block/enderite_side",
+    "west": "desafosahuaria:block/enderite_side",
+    "particle": "desafosahuaria:block/enderite_top"
+  },
+  "render_type": "solid"
+}

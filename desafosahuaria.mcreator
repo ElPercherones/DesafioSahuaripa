@@ -718,7 +718,7 @@
       "name": "WitheredPiglin",
       "type": "livingentity",
       "sortid": 67,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "withered_piglin",
       "metadata": {
@@ -858,6 +858,94 @@
         ]
       },
       "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EscombroDeEnderite",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "escombro_de_enderite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/block/escombro_de_enderite.json",
+          "src/main/java/net/mcreator/desafosahuaria/block/EscombroDeEnderiteBlock.java",
+          "src/main/resources/assets/desafosahuaria/blockstates/escombro_de_enderite.json",
+          "src/main/resources/assets/desafosahuaria/models/item/escombro_de_enderite.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "FragmentoDeEnderite",
+      "type": "item",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragmento_de_enderite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/fragmento_de_enderite.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/FragmentoDeEnderiteItem.java"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "MejoraDeAmatistaCrafteo",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mejora_de_amatista_crafteo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/mejora_de_amatista_crafteo.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "FragmentoDeEnderite1",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragmento_de_enderite_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/fragmento_de_enderite_1.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "FragmentoDeEnderite2",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragmento_de_enderite_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/fragmento_de_enderite_2.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "FragmentoDeEnderite3",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragmento_de_enderite_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/fragmento_de_enderite_3.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
     }
   ],
   "variable_elements": [],
@@ -868,6 +956,7 @@
       "item.desafosahuaria.pescadodeoro": "Pescado marchito",
       "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
       "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
+      "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
       "advancements.logro_7.title": "Hipertensión++",
       "item.desafosahuaria.pitaya": "Pitaya",
       "advancements.logro_4.title": "Ya casi...",
@@ -888,6 +977,7 @@
       "advancements.logro_3.descr": "Conseguiste la mejora netherite-oro",
       "advancements.logo_12.title": "Mi espada es más grande...",
       "block.desafosahuaria.hardcore_pot": "Hardcore Pot",
+      "item.desafosahuaria.fragmento_de_enderite": "Fragmento De Enderite",
       "advancements.logro_6.descr": "Utilizaste la reliquia de vida",
       "effect.desafosahuaria.deconstruccion": "Deconstrucción",
       "advancements.logro_5.descr": "Conseguiste la mejora de netherite-diamante",

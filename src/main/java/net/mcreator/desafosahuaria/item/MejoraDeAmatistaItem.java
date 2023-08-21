@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 public class MejoraDeAmatistaItem extends Item {
 	public MejoraDeAmatistaItem() {
-		super(new Item.Properties().stacksTo(16).rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override
