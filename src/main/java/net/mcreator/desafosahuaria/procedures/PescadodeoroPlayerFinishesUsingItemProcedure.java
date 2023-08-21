@@ -23,9 +23,15 @@ public class PescadodeoroPlayerFinishesUsingItemProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 200, 1, false, true));
-			if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.01) {
+			if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.02) {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(DesafosahuariaModMobEffects.DECONSTRUCCION.get(), 200, 0, false, true));
+			}
+			if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get())) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+					_entity.addEffect(new MobEffectInstance(DesafosahuariaModMobEffects.DECONSTRUCCION.get(),
+							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getDuration() : 0) + 40),
+							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getAmplifier() : 0) + 1)));
 			}
 		}
 	}

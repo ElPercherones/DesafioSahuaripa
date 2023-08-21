@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "item": "desafosahuaria:lanza_de_amatista"
+      "item": "desafosahuaria:mejora_de_amatista"
     },
     "title": {
-      "translate": "advancements.logo_12.title"
+      "translate": "advancements.logro_13.title"
     },
     "description": {
-      "translate": "advancements.logo_12.descr"
+      "translate": "advancements.logro_13.descr"
     },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
-    "logo_12": {
+    "logro_13": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "desafosahuaria:lanza_de_amatista"
+              "desafosahuaria:mejora_de_amatista"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "desafosahuaria:logro_13"
+  "parent": "desafosahuaria:logro_14"
 }

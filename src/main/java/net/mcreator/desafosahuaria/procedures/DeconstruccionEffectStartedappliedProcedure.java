@@ -16,11 +16,10 @@ public class DeconstruccionEffectStartedappliedProcedure {
 		double nivel = 0;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.getMobType() == MobType.UNDEAD)) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getAmplifier() : 0) == 0) {
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue() - 2));
+			} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getAmplifier() : 0) > 0) {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue()
-						- ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue() / 5));
-			} else if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getAmplifier() : 0) >= 1) {
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue()
-						- ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getValue() / 3));
+						- ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()) ? _livEnt.getEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get()).getAmplifier() : 0) + 1) * 2));
 			}
 		}
 		{

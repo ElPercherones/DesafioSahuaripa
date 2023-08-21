@@ -18,10 +18,6 @@ public class DesafosahuariaModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
-		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(DesafosahuariaModItems.WITHERED_PIGLIN_SPAWN_EGG.get());
-		}
-
 		if (tabData.getTab() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(DesafosahuariaModItems.RELIQUIA_DE_RESURRECION.get());
 		}

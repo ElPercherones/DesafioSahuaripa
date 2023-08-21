@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "item": "desafosahuaria:lanza_de_amatista"
+      "item": "desafosahuaria:escombro_de_enderite"
     },
     "title": {
-      "translate": "advancements.logo_12.title"
+      "translate": "advancements.logro_14.title"
     },
     "description": {
-      "translate": "advancements.logo_12.descr"
+      "translate": "advancements.logro_14.descr"
     },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
-    "logo_12": {
+    "logro_14": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "desafosahuaria:lanza_de_amatista"
+              "desafosahuaria:escombro_de_enderite"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "desafosahuaria:logro_13"
+  "parent": "desafosahuaria:logro_11"
 }

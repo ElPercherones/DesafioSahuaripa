@@ -474,25 +474,6 @@
       }
     },
     {
-      "name": "Totem",
-      "type": "procedure",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "totem",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/desafosahuaria/procedures/TotemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "BastonDeAmatista2LivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 51,
@@ -715,22 +696,6 @@
       "path": "~/Mejoras"
     },
     {
-      "name": "WitheredPiglin",
-      "type": "livingentity",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "withered_piglin",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/desafosahuaria/entity/WitheredPiglinEntity.java",
-          "src/main/java/net/mcreator/desafosahuaria/client/renderer/WitheredPiglinRenderer.java",
-          "src/main/resources/data/desafosahuaria/forge/biome_modifier/withered_piglin_biome_modifier.json",
-          "src/main/resources/assets/desafosahuaria/models/item/withered_piglin_spawn_egg.json"
-        ]
-      }
-    },
-    {
       "name": "ReliquiaDeResurrecion",
       "type": "item",
       "sortid": 68,
@@ -946,6 +911,32 @@
         ]
       },
       "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "Logro13",
+      "type": "achievement",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_13",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_13.json"
+        ]
+      }
+    },
+    {
+      "name": "Logro14",
+      "type": "achievement",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_14",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_14.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -958,10 +949,10 @@
       "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
       "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
       "advancements.logro_7.title": "Hipertensión++",
+      "advancements.logro_14.descr": "Conseguiste un escombro de enderite",
       "item.desafosahuaria.pitaya": "Pitaya",
       "advancements.logro_4.title": "Ya casi...",
       "gamerule.spawnEnderGhast.description": "Habilita/Desahibilita spawneo de EnderGhast",
-      "entity.desafosahuaria.withered_piglin": "Withered Piglin",
       "gamerule.spawnIllusioner": "IllusionerRaidSpawn",
       "gamerule.spawnIllusioner.description": "Spawneo de illusioners en asaltos",
       "gamerule.hardcoreDifficulty.description": "Set the difficulty of the hardcore",
@@ -980,14 +971,15 @@
       "item.desafosahuaria.fragmento_de_enderite": "Fragmento De Enderite",
       "advancements.logro_6.descr": "Utilizaste la reliquia de vida",
       "effect.desafosahuaria.deconstruccion": "Deconstrucción",
+      "advancements.logro_13.descr": "Conseguiste una mejora de amatista",
       "advancements.logro_5.descr": "Conseguiste la mejora de netherite-diamante",
+      "advancements.logro_13.title": "La mejora definitiva",
       "advancements.logro_9.descr": "Consumiste una pitaya dorada",
       "advancements.logro_5.title": "Hipertensión+",
       "advancements.logro_2.title": "Vamos avanzando...",
       "item_group.desafosahuaria.desafio_sahuaripa_2": "Desafío Sahuaripa 2",
       "gamerule.spawnEnderGhast": "SpawnEnderGhast",
       "advancements.logro_10.title": "Emmm...",
-      "item.desafosahuaria.withered_piglin_spawn_egg": "Withered Piglin Spawn Egg",
       "item_group.desafosahuaria.desafio_sahuaripa_1": "Desafío Sahuaripa 1",
       "advancements.logro_10.descr": "Consumiste un pescado marchito",
       "advancements.logro_2.descr": "Conseguiste la mejora de netherite-hierro",
@@ -999,6 +991,7 @@
       "advancements.logro_4.descr": "Conseguiste la mejora de netherite-esmeralda",
       "item.desafosahuaria.mejora_de_amatista": "Mejora De Amatista",
       "item.desafosahuaria.reliquia_de_vida": "Reliquia De Vida",
+      "advancements.logro_14.title": "Hermoso...",
       "advancements.logro_6.title": "+5",
       "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
       "advancements.logro_3.title": "Fiebre de oro...",
@@ -1029,7 +1022,7 @@
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "reliquia_de_resurrecion",
+    "modPicture": "anxsah",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

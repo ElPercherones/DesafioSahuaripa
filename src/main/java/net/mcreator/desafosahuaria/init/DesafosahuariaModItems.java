@@ -7,7 +7,6 @@ package net.mcreator.desafosahuaria.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -45,7 +44,6 @@ public class DesafosahuariaModItems {
 	public static final RegistryObject<Item> BASTON_DE_AMATISTA_2 = REGISTRY.register("baston_de_amatista_2", () -> new BastonDeAmatista2Item());
 	public static final RegistryObject<Item> PITAYA = REGISTRY.register("pitaya", () -> new PitayaItem());
 	public static final RegistryObject<Item> LANZA_DE_AMATISTA = REGISTRY.register("lanza_de_amatista", () -> new LanzaDeAmatistaItem());
-	public static final RegistryObject<Item> WITHERED_PIGLIN_SPAWN_EGG = REGISTRY.register("withered_piglin_spawn_egg", () -> new ForgeSpawnEggItem(DesafosahuariaModEntities.WITHERED_PIGLIN, -13434829, -10092442, new Item.Properties()));
 	public static final RegistryObject<Item> RELIQUIA_DE_RESURRECION = REGISTRY.register("reliquia_de_resurrecion", () -> new ReliquiaDeResurrecionItem());
 	public static final RegistryObject<Item> MEJORA_DE_AMATISTA = REGISTRY.register("mejora_de_amatista", () -> new MejoraDeAmatistaItem());
 	public static final RegistryObject<Item> ESCOMBRO_DE_ENDERITE = block(DesafosahuariaModBlocks.ESCOMBRO_DE_ENDERITE);
