@@ -18,6 +18,7 @@ import net.mcreator.desafosahuaria.item.ReliquiaDeResurrecionItem;
 import net.mcreator.desafosahuaria.item.PitayadoradaItem;
 import net.mcreator.desafosahuaria.item.PitayaItem;
 import net.mcreator.desafosahuaria.item.PescadodeoroItem;
+import net.mcreator.desafosahuaria.item.MuerteItem;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura4Item;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura3Item;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura2Item;
@@ -53,6 +54,7 @@ public class DesafosahuariaModItems {
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_CHESTPLATE = REGISTRY.register("enderite_armor_set_chestplate", () -> new EnderiteArmorSetItem.Chestplate());
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_LEGGINGS = REGISTRY.register("enderite_armor_set_leggings", () -> new EnderiteArmorSetItem.Leggings());
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_BOOTS = REGISTRY.register("enderite_armor_set_boots", () -> new EnderiteArmorSetItem.Boots());
+	public static final RegistryObject<Item> MUERTE = REGISTRY.register("muerte", () -> new MuerteItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

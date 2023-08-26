@@ -38,9 +38,6 @@ public class GuiProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("/gamemode survival " + (guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "")));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), ("/tp "
-						+ (guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "") + world.getLevelData().getXSpawn() + world.getLevelData().getYSpawn() + world.getLevelData().getZSpawn()));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, 2, 2);

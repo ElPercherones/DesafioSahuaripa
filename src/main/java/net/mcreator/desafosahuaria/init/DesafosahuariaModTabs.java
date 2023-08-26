@@ -44,6 +44,7 @@ public class DesafosahuariaModTabs {
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_CHESTPLATE.get());
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_LEGGINGS.get());
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_BOOTS.get());
+					tabData.accept(DesafosahuariaModItems.MUERTE.get());
 				})
 
 		);

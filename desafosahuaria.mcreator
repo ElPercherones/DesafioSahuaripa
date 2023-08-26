@@ -1260,6 +1260,71 @@
           "src/main/resources/data/minecraft/loot_tables/gameplay/piglin_bartering.json"
         ]
       }
+    },
+    {
+      "name": "Muerte",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muerte",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/muerte.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/MuerteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Muerte1",
+      "type": "gui",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muerte_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/world/inventory/Muerte1Menu.java",
+          "src/main/java/net/mcreator/desafosahuaria/client/gui/Muerte1Screen.java"
+        ]
+      },
+      "path": "~/EventosMuerte/GUIS"
+    },
+    {
+      "name": "MuerteRightclicked",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muerte_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/MuerteRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte/GUIS"
     }
   ],
   "variable_elements": [],
@@ -1275,8 +1340,10 @@
       "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
       "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
       "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
+      "gui.desafosahuaria.muerte_1.button_enter": "Enter",
       "advancements.logro_7.title": "Hipertensión++",
       "advancements.logro_15.title": "Cubreme de enderite",
+      "gui.desafosahuaria.muerte_1.muertetexto2": "",
       "advancements.logro_14.descr": "Conseguiste un escombro de enderite",
       "item.desafosahuaria.enderite_armor_set_chestplate": "Peto de enderite",
       "item.desafosahuaria.pitaya": "Pitaya",
@@ -1325,9 +1392,11 @@
       "advancements.logro_14.title": "Hermoso...",
       "advancements.logro_6.title": "+5",
       "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
+      "item.desafosahuaria.muerte": "Muerte",
       "advancements.logro_3.title": "Fiebre de oro...",
       "advancements.logro_11.title": "Desafío Sahuaripa v2",
       "item.desafosahuaria.enderite_armor_set_helmet": "Casco de enderite",
+      "gui.desafosahuaria.muerte_1.muertetexto": "Titulo",
       "item.desafosahuaria.baston_de_amatista": "Bastón de amatista"
     }
   },

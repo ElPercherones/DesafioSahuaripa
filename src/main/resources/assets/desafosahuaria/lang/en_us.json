@@ -8,8 +8,10 @@
   "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
   "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
   "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
+  "gui.desafosahuaria.muerte_1.button_enter": "Enter",
   "advancements.logro_7.title": "Hipertensión++",
   "advancements.logro_15.title": "Cubreme de enderite",
+  "gui.desafosahuaria.muerte_1.muertetexto2": "",
   "advancements.logro_14.descr": "Conseguiste un escombro de enderite",
   "item.desafosahuaria.enderite_armor_set_chestplate": "Peto de enderite",
   "item.desafosahuaria.pitaya": "Pitaya",
@@ -58,8 +60,10 @@
   "advancements.logro_14.title": "Hermoso...",
   "advancements.logro_6.title": "+5",
   "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
+  "item.desafosahuaria.muerte": "Muerte",
   "advancements.logro_3.title": "Fiebre de oro...",
   "advancements.logro_11.title": "Desafío Sahuaripa v2",
   "item.desafosahuaria.enderite_armor_set_helmet": "Casco de enderite",
+  "gui.desafosahuaria.muerte_1.muertetexto": "Titulo",
   "item.desafosahuaria.baston_de_amatista": "Bastón de amatista"
 }
