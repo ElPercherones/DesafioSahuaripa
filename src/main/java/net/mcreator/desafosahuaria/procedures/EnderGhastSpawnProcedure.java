@@ -38,15 +38,18 @@ public class EnderGhastSpawnProcedure {
 		if (entity == null)
 			return;
 		if ((world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) > 0) {
-			if (entity instanceof EnderMan && !(!world.getEntitiesOfClass(EnderMan.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).isEmpty())) {
+			if (entity instanceof EnderMan && !(!world.getEntitiesOfClass(EnderMan.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).isEmpty())) {
 				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 					if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.01) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3((x + Mth.nextDouble(RandomSource.create(), 0, 3)), (y + Mth.nextDouble(RandomSource.create(), 3, 10)), (z + Mth.nextDouble(RandomSource.create(), 0, 3))),
+									new CommandSourceStack(CommandSource.NULL, new Vec3((x + Mth.nextDouble(RandomSource.create(), 0, 3)), (y + Mth.nextDouble(RandomSource.create(), 5, 10)), (z + Mth.nextDouble(RandomSource.create(), 0, 3))),
 											Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									"/summon minecraft:ghast ~ ~1 ~ {Health:60,Attributes:[{Name:\"generic.maxHealth\",Base:60}]}");
-					} else if ((world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) >= 50) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/summon minecraft:creeper ~ ~1 ~ {powered:1,Health:20,Attributes:[{Name:\"generic.maxHealth\",Base:20}],ExplosionRadius:6,Fuse:18}");
+					} else if (!world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									"/summon minecraft:creeper ~ ~1 ~ {powered:1,Health:20,Attributes:[{Name:\"generic.maxHealth\",Base:20}],ExplosionRadius:6,Fuse:18}");

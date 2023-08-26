@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "reliquia_de_resurrecion",
+    "texture": "reliquiaderesurrecion",
     "customModelName": "Normal",
     "name": "Reliquia De Resurrecion",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:DesafioSahuaripa2"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "ReliquiaDeResurrecionRightclicked"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

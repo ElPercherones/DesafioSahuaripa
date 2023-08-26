@@ -5,10 +5,10 @@
     "renderType": 1,
     "texture": "reliquia_de_resurrecion",
     "customModelName": "lanzadeamatista:default",
-    "name": "Bastón De Amatista",
+    "name": "Bastón de amatista",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:DesafioSahuaripa2"
     },
     "stackSize": 1,
     "enchantability": 0,

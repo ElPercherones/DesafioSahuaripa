@@ -26,7 +26,7 @@ public class EscombroDeEnderiteBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public EscombroDeEnderiteBlock() {
-		super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.ANCIENT_DEBRIS).strength(30f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.HEAVY_METAL).sound(SoundType.ANCIENT_DEBRIS).strength(60f, 10f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 

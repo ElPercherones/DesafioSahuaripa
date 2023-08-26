@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.desafosahuaria.init.DesafosahuariaModMobEffects;
+import net.mcreator.desafosahuaria.init.DesafosahuariaModMenus;
 import net.mcreator.desafosahuaria.init.DesafosahuariaModItems;
 import net.mcreator.desafosahuaria.init.DesafosahuariaModBlocks;
 
@@ -55,6 +56,8 @@ public class DesafosahuariaMod {
 		DesafosahuariaModItems.REGISTRY.register(bus);
 
 		DesafosahuariaModMobEffects.REGISTRY.register(bus);
+
+		DesafosahuariaModMenus.REGISTRY.register(bus);
 
 	}
 

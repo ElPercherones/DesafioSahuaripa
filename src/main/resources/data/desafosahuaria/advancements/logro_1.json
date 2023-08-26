@@ -13,13 +13,17 @@
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "logro_1": {
-      "trigger": "minecraft:changed_dimension",
+      "trigger": "minecraft:consume_item",
       "conditions": {
-        "to": "minecraft:overworld"
+        "item": {
+          "items": [
+            "minecraft:lava"
+          ]
+        }
       }
     }
   }

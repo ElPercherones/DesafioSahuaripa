@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "desafosahuaria:enderite_armor_set_chestplate"
+    },
+    "title": {
+      "translate": "advancements.logro_15.title"
+    },
+    "description": {
+      "translate": "advancements.logro_15.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "logro_15": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "desafosahuaria:logro_13"
+}

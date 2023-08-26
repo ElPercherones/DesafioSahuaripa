@@ -1,8 +1,8 @@
 {
   "parent": "desafosahuaria:custom/hardcorepot",
   "textures": {
-    "all": "desafosahuaria:block/hardcore_pot2",
-    "particle": "desafosahuaria:block/hardcore_pot2",
+    "all": "desafosahuaria:block/vacio",
+    "particle": "desafosahuaria:block/vacio",
     "0": "desafosahuaria:block/hardcore_pot2"
   },
   "render_type": "solid"

@@ -32,7 +32,7 @@ public class ReliquiaDeVidaItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		ReliquiaDeVidaRightclickedProcedure.execute(world, x, y, z, entity);
+		ReliquiaDeVidaRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

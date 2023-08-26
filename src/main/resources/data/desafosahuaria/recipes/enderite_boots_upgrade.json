@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "desafosahuaria:mejora_de_amatista"
+  },
+  "result": {
+    "item": "desafosahuaria:enderite_armor_set_boots"
+  }
+}

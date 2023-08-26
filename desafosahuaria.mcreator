@@ -294,6 +294,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -937,6 +941,325 @@
           "src/main/resources/data/desafosahuaria/advancements/logro_14.json"
         ]
       }
+    },
+    {
+      "name": "EnderiteArmorSet",
+      "type": "armor",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_armor_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/EnderiteArmorSetItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_boots.json",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_leggings.json",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_chestplate.json",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_helmet.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteArmorRegeneration",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_armor_regeneration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/EnderiteArmorRegenerationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteHelmetUpgrade",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_helmet_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_helmet_upgrade.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteChestplateUpgrade",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_chestplate_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_chestplate_upgrade.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteLegginsUpgrade",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_leggins_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_leggins_upgrade.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteBootsUpgrade",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_boots_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_boots_upgrade.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "Logro15",
+      "type": "achievement",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logro_15",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_15.json"
+        ]
+      }
+    },
+    {
+      "name": "Evento1",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evento_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Evento1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte"
+    },
+    {
+      "name": "Evento2",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evento_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Evento2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte"
+    },
+    {
+      "name": "EventosMuerte",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eventos_muerte",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/EventosMuerteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte"
+    },
+    {
+      "name": "ReliquiaGUI",
+      "type": "gui",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/client/gui/ReliquiaGUIScreen.java",
+          "src/main/java/net/mcreator/desafosahuaria/network/ReliquiaGUIButtonMessage.java",
+          "src/main/java/net/mcreator/desafosahuaria/world/inventory/ReliquiaGUIMenu.java"
+        ]
+      },
+      "path": "~/EventosMuerte/GUIS"
+    },
+    {
+      "name": "Gui",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/GuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReliquiaDeResurrecionRightclicked",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reliquia_de_resurrecion_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/ReliquiaDeResurrecionRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mejoras"
+    },
+    {
+      "name": "Piglin",
+      "type": "loottable",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/gameplay/piglin_bartering.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -945,12 +1268,19 @@
     "en_us": {
       "advancements.logro_7.descr": "Gastaste un tótem sahuaripa",
       "item.desafosahuaria.pescadodeoro": "Pescado marchito",
+      "advancements.logro_15.descr": "Te equipaste una armadura completa de enderite",
+      "item.desafosahuaria.enderite_armor_set_boots": "Botas de enderite",
+      "gui.desafosahuaria.reliquia_gui.label_escribe_el_nombre_del_jugador_a": "Reliquia de resurreción",
+      "gui.desafosahuaria.reliquia_gui.nombrerevivir": "",
       "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
       "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
       "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
       "advancements.logro_7.title": "Hipertensión++",
+      "advancements.logro_15.title": "Cubreme de enderite",
       "advancements.logro_14.descr": "Conseguiste un escombro de enderite",
+      "item.desafosahuaria.enderite_armor_set_chestplate": "Peto de enderite",
       "item.desafosahuaria.pitaya": "Pitaya",
+      "item.desafosahuaria.enderite_armor_set_leggings": "Pantalón de enderite",
       "advancements.logro_4.title": "Ya casi...",
       "gamerule.spawnEnderGhast.description": "Habilita/Desahibilita spawneo de EnderGhast",
       "gamerule.spawnIllusioner": "IllusionerRaidSpawn",
@@ -979,6 +1309,7 @@
       "advancements.logro_2.title": "Vamos avanzando...",
       "item_group.desafosahuaria.desafio_sahuaripa_2": "Desafío Sahuaripa 2",
       "gamerule.spawnEnderGhast": "SpawnEnderGhast",
+      "gui.desafosahuaria.reliquia_gui.button_aceptar": "Enter",
       "advancements.logro_10.title": "Emmm...",
       "item_group.desafosahuaria.desafio_sahuaripa_1": "Desafío Sahuaripa 1",
       "advancements.logro_10.descr": "Consumiste un pescado marchito",
@@ -996,7 +1327,8 @@
       "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
       "advancements.logro_3.title": "Fiebre de oro...",
       "advancements.logro_11.title": "Desafío Sahuaripa v2",
-      "item.desafosahuaria.baston_de_amatista": "Bastón De Amatista"
+      "item.desafosahuaria.enderite_armor_set_helmet": "Casco de enderite",
+      "item.desafosahuaria.baston_de_amatista": "Bastón de amatista"
     }
   },
   "foldersRoot": {
@@ -1009,20 +1341,29 @@
       {
         "name": "DesafioSahuaripa2",
         "children": []
+      },
+      {
+        "name": "EventosMuerte",
+        "children": [
+          {
+            "name": "GUIS",
+            "children": []
+          }
+        ]
       }
     ]
   },
   "workspaceSettings": {
     "modid": "desafosahuaria",
     "modName": "DesafíoSahuaria+",
-    "version": "1.8.0",
+    "version": "1.2.1",
     "description": "Complemento Desafío Anexo Sahuaripa",
     "author": "ElPerches, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "anxsah",
+    "modPicture": "anxsah2",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

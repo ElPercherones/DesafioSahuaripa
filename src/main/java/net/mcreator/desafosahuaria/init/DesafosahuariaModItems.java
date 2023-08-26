@@ -25,6 +25,7 @@ import net.mcreator.desafosahuaria.item.Mejoradearmadura1Item;
 import net.mcreator.desafosahuaria.item.MejoraDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.LanzaDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.FragmentoDeEnderiteItem;
+import net.mcreator.desafosahuaria.item.EnderiteArmorSetItem;
 import net.mcreator.desafosahuaria.item.BastonDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.BastonDeAmatista2Item;
 import net.mcreator.desafosahuaria.DesafosahuariaMod;
@@ -48,6 +49,10 @@ public class DesafosahuariaModItems {
 	public static final RegistryObject<Item> MEJORA_DE_AMATISTA = REGISTRY.register("mejora_de_amatista", () -> new MejoraDeAmatistaItem());
 	public static final RegistryObject<Item> ESCOMBRO_DE_ENDERITE = block(DesafosahuariaModBlocks.ESCOMBRO_DE_ENDERITE);
 	public static final RegistryObject<Item> FRAGMENTO_DE_ENDERITE = REGISTRY.register("fragmento_de_enderite", () -> new FragmentoDeEnderiteItem());
+	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_HELMET = REGISTRY.register("enderite_armor_set_helmet", () -> new EnderiteArmorSetItem.Helmet());
+	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_CHESTPLATE = REGISTRY.register("enderite_armor_set_chestplate", () -> new EnderiteArmorSetItem.Chestplate());
+	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_LEGGINGS = REGISTRY.register("enderite_armor_set_leggings", () -> new EnderiteArmorSetItem.Leggings());
+	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_BOOTS = REGISTRY.register("enderite_armor_set_boots", () -> new EnderiteArmorSetItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

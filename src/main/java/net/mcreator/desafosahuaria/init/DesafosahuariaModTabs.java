@@ -9,20 +9,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DesafosahuariaModTabs {
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
-
-		if (tabData.getTab() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(DesafosahuariaModItems.RELIQUIA_DE_RESURRECION.get());
-		}
-	}
-
 	@SubscribeEvent
 	public static void buildTabContentsModded(CreativeModeTabEvent.Register event) {
 		event.registerCreativeModeTab(new ResourceLocation("desafosahuaria", "desafio_sahuaripa_1"),
@@ -42,11 +33,17 @@ public class DesafosahuariaModTabs {
 				builder -> builder.title(Component.translatable("item_group.desafosahuaria.desafio_sahuaripa_2")).icon(() -> new ItemStack(DesafosahuariaModItems.MEJORA_DE_AMATISTA.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DesafosahuariaModItems.PITAYADORADA.get());
 					tabData.accept(DesafosahuariaModItems.PESCADODEORO.get());
+					tabData.accept(DesafosahuariaModItems.BASTON_DE_AMATISTA.get());
 					tabData.accept(DesafosahuariaModItems.PITAYA.get());
 					tabData.accept(DesafosahuariaModItems.LANZA_DE_AMATISTA.get());
+					tabData.accept(DesafosahuariaModItems.RELIQUIA_DE_RESURRECION.get());
 					tabData.accept(DesafosahuariaModItems.MEJORA_DE_AMATISTA.get());
 					tabData.accept(DesafosahuariaModBlocks.ESCOMBRO_DE_ENDERITE.get().asItem());
 					tabData.accept(DesafosahuariaModItems.FRAGMENTO_DE_ENDERITE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_HELMET.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_CHESTPLATE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_LEGGINGS.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_BOOTS.get());
 				})
 
 		);

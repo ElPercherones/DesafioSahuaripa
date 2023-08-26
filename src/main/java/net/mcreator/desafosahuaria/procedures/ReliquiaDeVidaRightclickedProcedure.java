@@ -29,7 +29,7 @@ import net.mcreator.desafosahuaria.init.DesafosahuariaModMobEffects;
 import net.mcreator.desafosahuaria.init.DesafosahuariaModItems;
 
 public class ReliquiaDeVidaRightclickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
@@ -83,6 +83,8 @@ public class ReliquiaDeVidaRightclickedProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(DesafosahuariaModMobEffects.DECONSTRUCCION.get());
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 		}
 	}
 }

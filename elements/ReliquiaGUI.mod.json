@@ -1,0 +1,47 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 130,
+    "height": 50,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "nombrerevivir",
+          "width": 120,
+          "height": 20,
+          "x": 153,
+          "y": 100
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_aceptar",
+          "text": "Enter",
+          "onClick": {
+            "name": "Gui"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 183,
+          "y": 121
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 14,
+      "sy": 18,
+      "ox": 15,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
