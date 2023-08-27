@@ -21,4 +21,10 @@ description="Complemento Desafío Anexo Sahuaripa"
 
 
 
+[[dependencies.desafosahuaria]]
+    modId="anexo_core"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Blocks.PLAYER_WALL_HEAD"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ReliquiaDeResurrecion"
+    },
+    "name": "crafteo_reliquia_resurrecion",
+    "namespace": "mod"
+  }
+}

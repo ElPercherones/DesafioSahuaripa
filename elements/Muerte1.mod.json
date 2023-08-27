@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 176,
-    "height": 100,
+    "height": 176,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -17,30 +17,139 @@
           "name": "muertetexto",
           "width": 120,
           "height": 20,
-          "x": 153,
-          "y": 87
+          "x": 129,
+          "y": 68
         }
       },
       {
         "type": "button",
         "data": {
           "name": "button_enter",
-          "text": "Enter",
+          "text": "Guardar",
+          "onClick": {
+            "name": "MuerteTextos"
+          },
           "width": 51,
           "height": 20,
-          "x": 189,
-          "y": 135
+          "x": 131,
+          "y": 182
         }
       },
       {
         "type": "textfield",
         "data": {
-          "placeholder": "",
+          "placeholder": "Subtítulo",
           "name": "muertetexto2",
           "width": 120,
           "height": 20,
-          "x": 153,
-          "y": 110
+          "x": 129,
+          "y": 90
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "efectomuerte",
+          "text": "Habilitar efecto de muerte",
+          "x": 131,
+          "y": 43
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "tormenta",
+          "text": "Habilitar evento de muerte",
+          "x": 131,
+          "y": 114
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Evento ",
+          "name": "tormentatiempo",
+          "width": 120,
+          "height": 20,
+          "x": 130,
+          "y": 137
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Texto de evento",
+          "name": "tormentatexto",
+          "width": 120,
+          "height": 20,
+          "x": 130,
+          "y": 160
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_sigpag",
+          "text": "Sig.Pág.",
+          "onClick": {
+            "name": "AbrirPag2"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 229,
+          "y": 182
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "onClick": {
+            "name": "Save1"
+          },
+          "x": 256,
+          "y": 70
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst1",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "onClick": {
+            "name": "Save2"
+          },
+          "x": 256,
+          "y": 92
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst2",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "onClick": {
+            "name": "Save3"
+          },
+          "x": 256,
+          "y": 139
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst3",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "onClick": {
+            "name": "Save4"
+          },
+          "x": 256,
+          "y": 162
         }
       }
     ],

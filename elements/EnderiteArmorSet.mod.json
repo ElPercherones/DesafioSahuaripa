@@ -3,17 +3,17 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "enderite_helmet",
+    "textureHelmet": "enderite_helmet2",
     "enableBody": true,
-    "textureBody": "enderite_chestplate",
+    "textureBody": "enderite_chestplate2",
     "enableLeggings": true,
-    "textureLeggings": "enderite_leggins",
+    "textureLeggings": "enderite_leggins2",
     "enableBoots": true,
-    "textureBoots": "enderite_boots",
+    "textureBoots": "enderite_boots2",
     "creativeTab": {
       "value": "CUSTOM:DesafioSahuaripa2"
     },
-    "armorTextureFile": "witherite_",
+    "armorTextureFile": "endirilium__",
     "helmetName": "Casco de enderite",
     "bodyName": "Peto de enderite",
     "leggingsName": "Pantalón de enderite",
@@ -64,6 +64,9 @@
     "repairItems": [
       {
         "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
       }
     ]
   }

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "anexo_core:trozo_de_escombros_de_el_fin"
+    },
+    "1": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "2": {
+      "item": "anexo_core:trozo_de_escombros_de_el_fin"
+    },
+    "3": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "4": {
+      "item": "minecraft:player_wall_head"
+    },
+    "5": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "6": {
+      "item": "anexo_core:trozo_de_escombros_de_el_fin"
+    },
+    "7": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "8": {
+      "item": "anexo_core:trozo_de_escombros_de_el_fin"
+    }
+  },
+  "result": {
+    "item": "desafosahuaria:reliquia_de_resurrecion",
+    "count": 1
+  }
+}

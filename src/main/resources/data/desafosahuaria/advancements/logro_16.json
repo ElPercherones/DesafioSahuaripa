@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "desafosahuaria:enderite_hoe"
+    },
+    "title": {
+      "translate": "advancements.logro_16.title"
+    },
+    "description": {
+      "translate": "advancements.logro_16.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "logro_16": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "anexo_core:asada_de_enderite"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "desafosahuaria:logro_13"
+}

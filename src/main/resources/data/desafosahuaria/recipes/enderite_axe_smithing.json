@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "item": "desafosahuaria:mejora_de_amatista"
+  },
+  "result": {
+    "item": "desafosahuaria:enderite_axe"
+  }
+}

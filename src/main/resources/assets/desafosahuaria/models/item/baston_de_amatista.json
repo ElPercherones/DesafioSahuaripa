@@ -1,7 +1,6 @@
 {
-  "parent": "desafosahuaria:custom/lanzadeamatista",
+  "parent": "item/generated",
   "textures": {
-    "0": "desafosahuaria:block/lanzadeamatista",
-    "particle": "desafosahuaria:item/reliquia_de_resurrecion"
+    "layer0": "desafosahuaria:item/reliquia_de_resurrecion"
   }
 }

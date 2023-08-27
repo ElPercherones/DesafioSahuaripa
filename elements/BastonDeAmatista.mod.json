@@ -2,13 +2,13 @@
   "_fv": 43,
   "_type": "item",
   "definition": {
-    "renderType": 1,
+    "renderType": 0,
     "texture": "reliquia_de_resurrecion",
-    "customModelName": "lanzadeamatista:default",
-    "name": "Bastón de amatista",
+    "customModelName": "Normal",
+    "name": "ModPrueba",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:DesafioSahuaripa2"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "MuerteRightclicked"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

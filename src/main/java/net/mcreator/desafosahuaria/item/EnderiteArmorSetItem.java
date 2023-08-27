@@ -14,6 +14,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.desafosahuaria.init.DesafosahuariaModItems;
+
 public abstract class EnderiteArmorSetItem extends ArmorItem {
 	public EnderiteArmorSetItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
@@ -39,7 +41,7 @@ public abstract class EnderiteArmorSetItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.AMETHYST_SHARD));
+				return Ingredient.of(new ItemStack(Items.AMETHYST_SHARD), new ItemStack(DesafosahuariaModItems.FRAGMENTO_DE_ENDERITE.get()));
 			}
 
 			@Override
@@ -66,7 +68,7 @@ public abstract class EnderiteArmorSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "desafosahuaria:textures/models/armor/witherite__layer_1.png";
+			return "desafosahuaria:textures/models/armor/endirilium___layer_1.png";
 		}
 	}
 
@@ -77,7 +79,7 @@ public abstract class EnderiteArmorSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "desafosahuaria:textures/models/armor/witherite__layer_1.png";
+			return "desafosahuaria:textures/models/armor/endirilium___layer_1.png";
 		}
 	}
 
@@ -88,7 +90,7 @@ public abstract class EnderiteArmorSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "desafosahuaria:textures/models/armor/witherite__layer_2.png";
+			return "desafosahuaria:textures/models/armor/endirilium___layer_2.png";
 		}
 	}
 
@@ -99,7 +101,7 @@ public abstract class EnderiteArmorSetItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "desafosahuaria:textures/models/armor/witherite__layer_1.png";
+			return "desafosahuaria:textures/models/armor/endirilium___layer_1.png";
 		}
 	}
 }

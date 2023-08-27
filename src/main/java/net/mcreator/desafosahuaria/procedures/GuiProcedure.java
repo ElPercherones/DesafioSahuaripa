@@ -32,9 +32,9 @@ public class GuiProcedure {
 			return;
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (!(guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@p")
-				|| !(guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@e")
-				|| !(guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@a")) {
+		if (!((guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@p")
+				|| (guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@e")
+				|| (guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "").equals("@a"))) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("/gamemode survival " + (guistate.containsKey("text:nombrerevivir") ? ((EditBox) guistate.get("text:nombrerevivir")).getValue() : "")));

@@ -1,0 +1,34 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enderite_pickaxe",
+    "customModelName": "Normal",
+    "name": "Pico de enderite",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DesafioSahuaripa2"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 5,
+    "efficiency": 4.0,
+    "attackSpeed": 1.2,
+    "enchantability": 22,
+    "damageVsEntity": 6.0,
+    "usageCount": 2032,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:FragmentoDeEnderite"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Cubreme de enderite",
+    "achievementName": "Cúbreme de enderite",
     "achievementDescription": "Te equipaste una armadura completa de enderite",
     "achievementIcon": {
       "value": "CUSTOM:EnderiteArmorSet.body"

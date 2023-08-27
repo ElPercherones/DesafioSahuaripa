@@ -38,7 +38,7 @@ public class EnderGhastSpawnProcedure {
 		if (entity == null)
 			return;
 		if ((world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) > 0) {
-			if (entity instanceof EnderMan && !(!world.getEntitiesOfClass(EnderMan.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).isEmpty())) {
+			if (entity instanceof EnderMan && !(!world.getEntitiesOfClass(EnderMan.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty())) {
 				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 					if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.01) {
 						if (world instanceof ServerLevel _level)

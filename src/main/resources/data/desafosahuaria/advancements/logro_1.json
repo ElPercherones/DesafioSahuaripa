@@ -17,13 +17,19 @@
   },
   "criteria": {
     "logro_1": {
-      "trigger": "minecraft:consume_item",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "item": {
-          "items": [
-            "minecraft:lava"
-          ]
-        }
+        "items": [
+          {
+            "items": [
+              "desafosahuaria:baston_de_amatista"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
       }
     }
   }

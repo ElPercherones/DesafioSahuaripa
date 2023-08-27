@@ -1,0 +1,93 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 176,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "piglinsspawn",
+          "text": "Piglin spawn",
+          "x": 133,
+          "y": 39
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "ghastspawn",
+          "text": "EnderGhast spawn",
+          "x": 133,
+          "y": 61
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "endercreeperspawn",
+          "text": "EnderCreeper spawn",
+          "x": 133,
+          "y": 84
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "onClick": {
+            "name": "Save5"
+          },
+          "x": 276,
+          "y": 42
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst1",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "x": 276,
+          "y": 64
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_witheredamethyst2",
+          "image": "witheredamethyst.png",
+          "hoveredImage": "witheredamethyst.png",
+          "x": 276,
+          "y": 87
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pagant",
+          "text": "Pág.Ant.",
+          "width": 67,
+          "height": 20,
+          "x": 130,
+          "y": 182
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

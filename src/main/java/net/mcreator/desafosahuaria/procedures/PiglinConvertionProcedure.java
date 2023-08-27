@@ -37,16 +37,14 @@ public class PiglinConvertionProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) > 0) {
-			if (entity instanceof Pig) {
-				if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.01) {
-					if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_PORTAL)) {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3((x + Mth.nextDouble(RandomSource.create(), 0, 2)), y, (z + Mth.nextDouble(RandomSource.create(), 0, 2))), Vec2.ZERO, _level, 4, "", Component.literal(""),
-											_level.getServer(), null).withSuppressedOutput(),
-									"/summon minecraft:piglin_brute ~ ~1 ~ {Health:30,Attributes:[{Name:\"generic.maxHealth\",Base:30},{Name:\"generic.attackDamage\",Base:6}],HandItems:[{id:\"minecraft:netherite_axe\",tag:{Enchantments:[{id:sharpness,lvl:5},{id:unbreaking,lvl:3}]},Count:1},{id:\"minecraft:shield\",tag:{Enchantments:[{id:unbreaking,lvl:3}]},Count:1}],ArmorItems:[{tag:{Enchantments:[{id:protection,lvl:3},{id:feather_falling,lvl:2}]},id:\"minecraft:netherite_boots\",Count:1},{tag:{Enchantments:[{id:protection,lvl:3}]},id:\"minecraft:netherite_leggings\",Count:1},{tag:{Enchantments:[{id:protection,lvl:3}]},id:\"minecraft:netherite_chestplate\",Count:1},{id:\"minecraft:glass\",Count:1}]}");
-					}
+		if (entity instanceof Pig) {
+			if (Math.random() < (world.getLevelData().getGameRules().getInt(DesafosahuariaModGameRules.HARDCORE_DIFFICULTY)) * 0.01) {
+				if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.NETHER_PORTAL)) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3((x + Mth.nextDouble(RandomSource.create(), 0, 2)), y, (z + Mth.nextDouble(RandomSource.create(), 0, 2))), Vec2.ZERO, _level, 4, "", Component.literal(""),
+										_level.getServer(), null).withSuppressedOutput(),
+								"/summon minecraft:piglin_brute ~ ~1 ~ {Health:30,Attributes:[{Name:\"generic.maxHealth\",Base:30},{Name:\"generic.attackDamage\",Base:6}],HandItems:[{id:\"minecraft:netherite_axe\",tag:{Enchantments:[{id:sharpness,lvl:5},{id:unbreaking,lvl:3}]},Count:1},{id:\"minecraft:shield\",tag:{Enchantments:[{id:unbreaking,lvl:3}]},Count:1}],ArmorItems:[{tag:{Enchantments:[{id:protection,lvl:3},{id:feather_falling,lvl:2}]},id:\"minecraft:netherite_boots\",Count:1},{tag:{Enchantments:[{id:protection,lvl:3}]},id:\"minecraft:netherite_leggings\",Count:1},{tag:{Enchantments:[{id:protection,lvl:3}]},id:\"minecraft:netherite_chestplate\",Count:1},{id:\"minecraft:glass\",Count:1}]}");
 				}
 			}
 		}

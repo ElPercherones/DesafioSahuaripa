@@ -14,9 +14,23 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:MejoraDeAmatista"
+              "value": "CUSTOM:Pitayadorada"
             },
-            "weight": 1,
+            "weight": 4,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Pitaya"
+            },
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -28,7 +42,7 @@
         ]
       }
     ],
-    "name": "gameplay/piglin_bartering",
-    "namespace": "minecraft"
+    "name": "entities/piglin_bartering",
+    "namespace": "mod"
   }
 }

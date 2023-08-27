@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Deconstrucción",
-    "icon": "withered_shield_upgrade.png",
+    "icon": "deconstruccion_logo.png",
     "color": {
       "value": -10092442,
       "falpha": 0.0

@@ -18,7 +18,6 @@ import net.mcreator.desafosahuaria.item.ReliquiaDeResurrecionItem;
 import net.mcreator.desafosahuaria.item.PitayadoradaItem;
 import net.mcreator.desafosahuaria.item.PitayaItem;
 import net.mcreator.desafosahuaria.item.PescadodeoroItem;
-import net.mcreator.desafosahuaria.item.MuerteItem;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura4Item;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura3Item;
 import net.mcreator.desafosahuaria.item.Mejoradearmadura2Item;
@@ -26,6 +25,10 @@ import net.mcreator.desafosahuaria.item.Mejoradearmadura1Item;
 import net.mcreator.desafosahuaria.item.MejoraDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.LanzaDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.FragmentoDeEnderiteItem;
+import net.mcreator.desafosahuaria.item.EnderiteShovelItem;
+import net.mcreator.desafosahuaria.item.EnderitePickaxeItem;
+import net.mcreator.desafosahuaria.item.EnderiteHoeItem;
+import net.mcreator.desafosahuaria.item.EnderiteAxeItem;
 import net.mcreator.desafosahuaria.item.EnderiteArmorSetItem;
 import net.mcreator.desafosahuaria.item.BastonDeAmatistaItem;
 import net.mcreator.desafosahuaria.item.BastonDeAmatista2Item;
@@ -54,7 +57,10 @@ public class DesafosahuariaModItems {
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_CHESTPLATE = REGISTRY.register("enderite_armor_set_chestplate", () -> new EnderiteArmorSetItem.Chestplate());
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_LEGGINGS = REGISTRY.register("enderite_armor_set_leggings", () -> new EnderiteArmorSetItem.Leggings());
 	public static final RegistryObject<Item> ENDERITE_ARMOR_SET_BOOTS = REGISTRY.register("enderite_armor_set_boots", () -> new EnderiteArmorSetItem.Boots());
-	public static final RegistryObject<Item> MUERTE = REGISTRY.register("muerte", () -> new MuerteItem());
+	public static final RegistryObject<Item> ENDERITE_AXE = REGISTRY.register("enderite_axe", () -> new EnderiteAxeItem());
+	public static final RegistryObject<Item> ENDERITE_HOE = REGISTRY.register("enderite_hoe", () -> new EnderiteHoeItem());
+	public static final RegistryObject<Item> ENDERITE_PICKAXE = REGISTRY.register("enderite_pickaxe", () -> new EnderitePickaxeItem());
+	public static final RegistryObject<Item> ENDERITE_SHOVEL = REGISTRY.register("enderite_shovel", () -> new EnderiteShovelItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

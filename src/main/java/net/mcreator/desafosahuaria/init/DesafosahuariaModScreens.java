@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.desafosahuaria.client.gui.ReliquiaGUIScreen;
+import net.mcreator.desafosahuaria.client.gui.Muerte2Screen;
 import net.mcreator.desafosahuaria.client.gui.Muerte1Screen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -21,6 +22,7 @@ public class DesafosahuariaModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(DesafosahuariaModMenus.RELIQUIA_GUI.get(), ReliquiaGUIScreen::new);
 			MenuScreens.register(DesafosahuariaModMenus.MUERTE_1.get(), Muerte1Screen::new);
+			MenuScreens.register(DesafosahuariaModMenus.MUERTE_2.get(), Muerte2Screen::new);
 		});
 	}
 }

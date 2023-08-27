@@ -921,7 +921,7 @@
       "type": "achievement",
       "sortid": 85,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "logro_13",
       "metadata": {
         "files": [
@@ -934,7 +934,7 @@
       "type": "achievement",
       "sortid": 86,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "logro_14",
       "metadata": {
         "files": [
@@ -956,26 +956,6 @@
           "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_leggings.json",
           "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_chestplate.json",
           "src/main/resources/assets/desafosahuaria/models/item/enderite_armor_set_helmet.json"
-        ]
-      },
-      "path": "~/DesafioSahuaripa2"
-    },
-    {
-      "name": "EnderiteArmorRegeneration",
-      "type": "procedure",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enderite_armor_regeneration",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/desafosahuaria/procedures/EnderiteArmorRegenerationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/DesafioSahuaripa2"
@@ -1083,7 +1063,7 @@
           }
         ]
       },
-      "path": "~/EventosMuerte"
+      "path": "~/EventosMuerte-Descartado"
     },
     {
       "name": "Evento2",
@@ -1119,7 +1099,7 @@
           }
         ]
       },
-      "path": "~/EventosMuerte"
+      "path": "~/EventosMuerte-Descartado"
     },
     {
       "name": "EventosMuerte",
@@ -1132,30 +1112,9 @@
         "files": [
           "src/main/java/net/mcreator/desafosahuaria/procedures/EventosMuerteProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/EventosMuerte"
+      "path": "~/EventosMuerte-Descartado"
     },
     {
       "name": "ReliquiaGUI",
@@ -1171,7 +1130,7 @@
           "src/main/java/net/mcreator/desafosahuaria/world/inventory/ReliquiaGUIMenu.java"
         ]
       },
-      "path": "~/EventosMuerte/GUIS"
+      "path": "~/EventosMuerte-Descartado/GUIS"
     },
     {
       "name": "Gui",
@@ -1249,33 +1208,6 @@
       "path": "~/Mejoras"
     },
     {
-      "name": "Piglin",
-      "type": "loottable",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "piglin",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_tables/gameplay/piglin_bartering.json"
-        ]
-      }
-    },
-    {
-      "name": "Muerte",
-      "type": "item",
-      "sortid": 101,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "muerte",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/desafosahuaria/models/item/muerte.json",
-          "src/main/java/net/mcreator/desafosahuaria/item/MuerteItem.java"
-        ]
-      }
-    },
-    {
       "name": "Muerte1",
       "type": "gui",
       "sortid": 102,
@@ -1285,10 +1217,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/desafosahuaria/world/inventory/Muerte1Menu.java",
-          "src/main/java/net/mcreator/desafosahuaria/client/gui/Muerte1Screen.java"
+          "src/main/java/net/mcreator/desafosahuaria/client/gui/Muerte1Screen.java",
+          "src/main/java/net/mcreator/desafosahuaria/network/Muerte1ButtonMessage.java"
         ]
       },
-      "path": "~/EventosMuerte/GUIS"
+      "path": "~/EventosMuerte-Descartado/GUIS"
     },
     {
       "name": "MuerteRightclicked",
@@ -1324,80 +1257,677 @@
           }
         ]
       },
-      "path": "~/EventosMuerte/GUIS"
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "MuerteTextos",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muerte_textos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/MuerteTextosProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Muerte2",
+      "type": "gui",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muerte_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/client/gui/Muerte2Screen.java",
+          "src/main/java/net/mcreator/desafosahuaria/world/inventory/Muerte2Menu.java",
+          "src/main/java/net/mcreator/desafosahuaria/network/Muerte2ButtonMessage.java"
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "AbrirPag2",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abrir_pag_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/AbrirPag2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Save1",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Save1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Save2",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Save2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Save3",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Save3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Save4",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Save4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "Save5",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Save5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "AbrirPag1",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abrir_pag_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/AbrirPag1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EventosMuerte-Descartado/GUIS"
+    },
+    {
+      "name": "EnderiteAxe",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/EnderiteAxeItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_axe.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteHoe",
+      "type": "tool",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/item/EnderiteHoeItem.java",
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_hoe.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderitePickaxe",
+      "type": "tool",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_pickaxe.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/EnderitePickaxeItem.java"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteShovel",
+      "type": "tool",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/desafosahuaria/models/item/enderite_shovel.json",
+          "src/main/java/net/mcreator/desafosahuaria/item/EnderiteShovelItem.java"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteAxeSmithing",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_axe_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_axe_smithing.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteHoeSmithing",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_hoe_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_hoe_smithing.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderitePickaxeSmithing",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_pickaxe_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_pickaxe_smithing.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "EnderiteShovelSmithing",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderite_shovel_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/enderite_shovel_smithing.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "PiglinTrades",
+      "type": "loottable",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglin_trades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/loot_tables/entities/piglin_bartering.json"
+        ]
+      }
+    },
+    {
+      "name": "DeconstruccionPocion",
+      "type": "potion",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deconstruccion_pocion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DeconstrucionPotion1",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deconstrucion_potion_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/recipes/brewing/DeconstrucionPotion1BrewingRecipe.java"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "Logro15Procedure",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "logro_15_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/desafosahuaria/procedures/Logro15ProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
+    },
+    {
+      "name": "Logro16",
+      "type": "achievement",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "logro_16",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/advancements/logro_16.json"
+        ]
+      }
+    },
+    {
+      "name": "CrafteoReliquiaResurrecion",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crafteo_reliquia_resurrecion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/desafosahuaria/recipes/crafteo_reliquia_resurrecion.json"
+        ]
+      },
+      "path": "~/DesafioSahuaripa2"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "muertetexto",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    },
+    {
+      "name": "muertetexto2",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "tormentatiempo",
+      "type": "string",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "tormenta",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "tormentatexto",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "piglinsspawn",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "efectomuerte",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "totem",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "VariableLogro15",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "advancements.logro_7.descr": "Gastaste un tótem sahuaripa",
-      "item.desafosahuaria.pescadodeoro": "Pescado marchito",
-      "advancements.logro_15.descr": "Te equipaste una armadura completa de enderite",
-      "item.desafosahuaria.enderite_armor_set_boots": "Botas de enderite",
-      "gui.desafosahuaria.reliquia_gui.label_escribe_el_nombre_del_jugador_a": "Reliquia de resurreción",
+      "item.desafosahuaria.enderite_hoe": "Enderite Hoe",
+      "gui.desafosahuaria.muerte_2.endercreeperspawn": "EnderCreeper spawn",
+      "advancements.logro_7.descr": "Use a Sahuaripa Totem to cheat death...(again)",
+      "advancements.logro_15.descr": "Get a full suit of Enderite armor",
+      "item.desafosahuaria.pescadodeoro": "Withered Fish",
+      "item.desafosahuaria.enderite_armor_set_boots": "Enderite Boots",
+      "item.minecraft.tipped_arrow.effect.deconstruccion_pocion": "Arrow of Deconstruction",
+      "gui.desafosahuaria.reliquia_gui.label_escribe_el_nombre_del_jugador_a": "Relic of Resurrection ",
       "gui.desafosahuaria.reliquia_gui.nombrerevivir": "",
-      "item.desafosahuaria.reliquia_sahuaripa": "Reliquia Sahuaripa",
+      "item.desafosahuaria.reliquia_sahuaripa": "Totem Sahuaripa",
       "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
-      "block.desafosahuaria.escombro_de_enderite": "Escombro De Enderite",
-      "gui.desafosahuaria.muerte_1.button_enter": "Enter",
-      "advancements.logro_7.title": "Hipertensión++",
-      "advancements.logro_15.title": "Cubreme de enderite",
-      "gui.desafosahuaria.muerte_1.muertetexto2": "",
-      "advancements.logro_14.descr": "Conseguiste un escombro de enderite",
-      "item.desafosahuaria.enderite_armor_set_chestplate": "Peto de enderite",
+      "block.desafosahuaria.escombro_de_enderite": "Enderite Debris",
+      "item.minecraft.lingering_potion.effect.deconstruccion_pocion": "Lingering Potion of Deconstruction",
+      "gui.desafosahuaria.muerte_1.button_enter": "Save",
+      "advancements.logro_7.title": "Hypertension++",
+      "advancements.logro_15.title": "Cover Me in Enderite",
+      "gui.desafosahuaria.muerte_1.muertetexto2": "Subtítulo",
+      "advancements.logro_14.descr": "Obtain Enderite Debris",
+      "item.desafosahuaria.enderite_armor_set_chestplate": "Enderite Chestplate",
       "item.desafosahuaria.pitaya": "Pitaya",
-      "item.desafosahuaria.enderite_armor_set_leggings": "Pantalón de enderite",
-      "advancements.logro_4.title": "Ya casi...",
+      "item.desafosahuaria.enderite_armor_set_leggings": "Enderite Leggins",
+      "advancements.logro_4.title": "Almost there...",
       "gamerule.spawnEnderGhast.description": "Habilita/Desahibilita spawneo de EnderGhast",
       "gamerule.spawnIllusioner": "IllusionerRaidSpawn",
+      "gui.desafosahuaria.muerte_1.button_sigpag": "Sig.Pág.",
       "gamerule.spawnIllusioner.description": "Spawneo de illusioners en asaltos",
       "gamerule.hardcoreDifficulty.description": "Set the difficulty of the hardcore",
+      "item.desafosahuaria.enderite_pickaxe": "Enderite Pickaxe",
       "advancements.logro_11.descr": "Well-cum",
+      "item.desafosahuaria.enderite_shovel": "Enderite Shovel",
       "advancements.logro_1.title": "Desafío Anexo Sahuaripa",
-      "item.desafosahuaria.mejoradearmadura_1": "Mejora de netherite",
-      "item.desafosahuaria.mejoradearmadura_2": "Mejora de netherite",
-      "item.desafosahuaria.mejoradearmadura_3": "Mejora de netherite",
-      "item.desafosahuaria.baston_de_amatista_2": "Bastón De Amatista",
+      "item.desafosahuaria.mejoradearmadura_1": "Netherite Upgrade",
+      "item.desafosahuaria.mejoradearmadura_2": "Netherite Upgrade",
+      "gui.desafosahuaria.muerte_2.button_pagant": "Pág.Ant.",
+      "item.desafosahuaria.mejoradearmadura_3": "Netherite Upgrade",
+      "item.desafosahuaria.baston_de_amatista_2": "Amethyst Wand",
       "advancements.logro_8.title": "Uffas...",
-      "item.desafosahuaria.lanza_de_amatista": "Lanza De Amatista",
-      "item.desafosahuaria.mejoradearmadura_4": "Mejora de netherite",
-      "advancements.logro_3.descr": "Conseguiste la mejora netherite-oro",
-      "advancements.logo_12.title": "Mi espada es más grande...",
+      "item.desafosahuaria.lanza_de_amatista": "Amethyst Spear",
+      "gui.desafosahuaria.muerte_1.tormentatiempo": "Evento ",
+      "item.desafosahuaria.mejoradearmadura_4": "Netherite Upgrade",
+      "advancements.logro_3.descr": "You got the Netherite-Gold upgrade",
+      "advancements.logro_16.title": "Really?",
+      "advancements.logo_12.title": "My Sword is Bigger...",
       "block.desafosahuaria.hardcore_pot": "Hardcore Pot",
-      "item.desafosahuaria.fragmento_de_enderite": "Fragmento De Enderite",
-      "advancements.logro_6.descr": "Utilizaste la reliquia de vida",
+      "item.desafosahuaria.fragmento_de_enderite": "Enderite Scrap",
+      "advancements.logro_6.descr": "You used the life relic",
+      "effect.desafosahuaria.deconstruccion": "Deconstruction",
+      "advancements.logro_13.descr": "You got the Amethyst Upgrade",
+      "advancements.logro_5.descr": "You got the Netherite-Diamond Upgrade",
+      "advancements.logro_13.title": "The ultimate upgrade",
+      "advancements.logro_9.descr": "You ate a Golden Pitaya",
+      "item.minecraft.potion.effect.deconstruccion_pocion": "Potion of Deconstruction",
+      "advancements.logro_5.title": "Hypertension+",
+      "item.desafosahuaria.enderite_axe": "Enderite Axe",
+      "advancements.logro_2.title": "Here we go...",
+      "item_group.desafosahuaria.desafio_sahuaripa_2": "Eclipse ( Perches )",
+      "gui.desafosahuaria.muerte_1.tormentatexto": "Texto de evento",
+      "gamerule.spawnEnderGhast": "SpawnEnderGhast",
+      "gui.desafosahuaria.reliquia_gui.button_aceptar": "Enter",
+      "advancements.logro_10.title": "Emmm...",
+      "item_group.desafosahuaria.desafio_sahuaripa_1": "Desafío Sahuaripa ( Perches )",
+      "gui.desafosahuaria.muerte_1.tormenta": "Habilitar evento de muerte",
+      "advancements.logro_10.descr": "You ate a Withered Fish",
+      "gui.desafosahuaria.muerte_2.ghastspawn": "EnderGhast spawn",
+      "advancements.logro_2.descr": "You got the Netherite-Iron Upgrade",
+      "advancements.logro_1.descr": "Well-cum",
+      "advancements.logro_9.title": "Until it appears...",
+      "item.desafosahuaria.reliquia_de_resurrecion": "Relic of Resurrection",
+      "item.desafosahuaria.pitayadorada": "Golden Pitaya",
+      "advancements.logro_16.descr": "Use an Amethyst Upgrade to upgrade a Hoe, and then think about what you do with your life.",
+      "advancements.logro_8.descr": "You got the Amethyst Wand",
+      "advancements.logro_4.descr": "You got the Netherite-Emerald Upgrade",
+      "item.desafosahuaria.mejora_de_amatista": "Amethyst Upgrade",
+      "item.desafosahuaria.reliquia_de_vida": "Life Relic",
+      "advancements.logro_14.title": "Is beautiful...",
+      "gui.desafosahuaria.muerte_1.efectomuerte": "Habilitar efecto de muerte",
+      "advancements.logro_6.title": "+5",
+      "advancements.logo_12.descr": "You got the Amethyst Spear",
+      "advancements.logro_3.title": "Gold Rush...",
+      "advancements.logro_11.title": "Eclipse",
+      "item.desafosahuaria.enderite_armor_set_helmet": "Enderite Helmet",
+      "gui.desafosahuaria.muerte_1.muertetexto": "Titulo",
+      "gui.desafosahuaria.muerte_2.piglinsspawn": "Piglin spawn",
+      "item.minecraft.splash_potion.effect.deconstruccion_pocion": "Splash Potion of deconstruction",
+      "item.desafosahuaria.baston_de_amatista": "ModPrueba"
+    },
+    "es_mx": {
+      "item.desafosahuaria.enderite_hoe": "Azada de Enderite",
+      "advancements.logro_7.descr": "Usa un Tótem Sahuaripa para engañar a la muerte...(Otra vez)",
+      "gui.desafosahuaria.muerte_2.endercreeperspawn": "EnderCreeper spawn",
+      "item.desafosahuaria.pescadodeoro": "Pescado Marchito",
+      "advancements.logro_15.descr": "Consigue un equipo completo de Enderite",
+      "item.desafosahuaria.enderite_armor_set_boots": "Botas de Enderite",
+      "item.minecraft.tipped_arrow.effect.deconstruccion_pocion": "Flecha de Deconstrucción",
+      "gui.desafosahuaria.reliquia_gui.label_escribe_el_nombre_del_jugador_a": "Reliquia de Resurreción",
+      "gui.desafosahuaria.reliquia_gui.nombrerevivir": "",
+      "item.desafosahuaria.reliquia_sahuaripa": "Tótem Sahuaripa",
+      "gamerule.hardcoreDifficulty": "SahuaripaHardcoreDifficulty",
+      "block.desafosahuaria.escombro_de_enderite": "Escombro de Enderite",
+      "item.minecraft.lingering_potion.effect.deconstruccion_pocion": "Poción Persistente de Deconstrucción",
+      "gui.desafosahuaria.muerte_1.button_enter": "Guardar",
+      "advancements.logro_7.title": "Hipertensión++",
+      "advancements.logro_15.title": "Cúbreme de Enderite",
+      "gui.desafosahuaria.muerte_1.muertetexto2": "Subtítulo",
+      "advancements.logro_14.descr": "Conseguiste un Escombro de Enderite",
+      "item.desafosahuaria.enderite_armor_set_chestplate": "Peto de Enderite",
+      "item.desafosahuaria.pitaya": "Pitaya",
+      "item.desafosahuaria.enderite_armor_set_leggings": "Pantalones de Enderite",
+      "advancements.logro_4.title": "Por fin...",
+      "gamerule.spawnEnderGhast.description": "Habilita/Desahibilita spawneo de EnderGhast",
+      "gamerule.spawnIllusioner": "IllusionerRaidSpawn",
+      "gui.desafosahuaria.muerte_1.button_sigpag": "Sig.Pág.",
+      "gamerule.spawnIllusioner.description": "Spawneo de illusioners en asaltos",
+      "gamerule.hardcoreDifficulty.description": "Set the difficulty of the hardcore",
+      "item.desafosahuaria.enderite_pickaxe": "Pico de Enderite",
+      "advancements.logro_11.descr": "Well-cum",
+      "item.desafosahuaria.enderite_shovel": "Pala de Enderite",
+      "advancements.logro_1.title": "Desafío Anexo Sahuaripa",
+      "item.desafosahuaria.mejoradearmadura_1": "Mejora de Netherite",
+      "item.desafosahuaria.mejoradearmadura_2": "Mejora de Netherite",
+      "gui.desafosahuaria.muerte_2.button_pagant": "Pág.Ant.",
+      "item.desafosahuaria.mejoradearmadura_3": "Mejora de Enderite",
+      "item.desafosahuaria.baston_de_amatista_2": "Bastón de Amatista",
+      "advancements.logro_8.title": "Uffas...",
+      "item.desafosahuaria.lanza_de_amatista": "Lanza de Amatista",
+      "gui.desafosahuaria.muerte_1.tormentatiempo": "Evento ",
+      "item.desafosahuaria.mejoradearmadura_4": "Mejora de Netherite",
+      "advancements.logro_3.descr": "Conseguiste una Mejora de Netherite-Oro",
+      "advancements.logro_16.title": "En serio?",
+      "advancements.logo_12.title": "Si pero mi espada es más grande.",
+      "block.desafosahuaria.hardcore_pot": "Jarrón de Hardcore",
+      "item.desafosahuaria.fragmento_de_enderite": "Fragmento de Enderite",
+      "advancements.logro_6.descr": "Usaste la Reliquia de Vida",
       "effect.desafosahuaria.deconstruccion": "Deconstrucción",
-      "advancements.logro_13.descr": "Conseguiste una mejora de amatista",
-      "advancements.logro_5.descr": "Conseguiste la mejora de netherite-diamante",
+      "advancements.logro_13.descr": "Conseguiste una Mejora de Amatista",
+      "advancements.logro_5.descr": "Conseguiste una Mejora de Netherite-Diamante",
       "advancements.logro_13.title": "La mejora definitiva",
-      "advancements.logro_9.descr": "Consumiste una pitaya dorada",
+      "advancements.logro_9.descr": "Comiste una Pitaya Dorada",
+      "item.minecraft.potion.effect.deconstruccion_pocion": "Poción de Deconstrucción",
       "advancements.logro_5.title": "Hipertensión+",
-      "advancements.logro_2.title": "Vamos avanzando...",
-      "item_group.desafosahuaria.desafio_sahuaripa_2": "Desafío Sahuaripa 2",
+      "item.desafosahuaria.enderite_axe": "Hacha de Enderite",
+      "advancements.logro_2.title": "Aquí vamos...",
+      "item_group.desafosahuaria.desafio_sahuaripa_2": "Eclipse",
+      "gui.desafosahuaria.muerte_1.tormentatexto": "Texto de evento",
       "gamerule.spawnEnderGhast": "SpawnEnderGhast",
       "gui.desafosahuaria.reliquia_gui.button_aceptar": "Enter",
       "advancements.logro_10.title": "Emmm...",
       "item_group.desafosahuaria.desafio_sahuaripa_1": "Desafío Sahuaripa 1",
-      "advancements.logro_10.descr": "Consumiste un pescado marchito",
-      "advancements.logro_2.descr": "Conseguiste la mejora de netherite-hierro",
+      "gui.desafosahuaria.muerte_1.tormenta": "Habilitar evento de muerte",
+      "advancements.logro_10.descr": "Comiste un Pescado Marchito",
+      "gui.desafosahuaria.muerte_2.ghastspawn": "EnderGhast spawn",
+      "advancements.logro_2.descr": "Conseguiste una Mejora de Netherite-Hierro",
       "advancements.logro_1.descr": "Well-cum",
-      "advancements.logro_9.title": "Ahora si apareces...",
-      "item.desafosahuaria.reliquia_de_resurrecion": "Reliquia De Resurrecion",
+      "advancements.logro_9.title": "Hasta que apareces...",
+      "item.desafosahuaria.reliquia_de_resurrecion": "Reliquia de Resurreción",
       "item.desafosahuaria.pitayadorada": "Pitaya Dorada",
-      "advancements.logro_8.descr": "Conseguiste el bastón de amatista",
-      "advancements.logro_4.descr": "Conseguiste la mejora de netherite-esmeralda",
-      "item.desafosahuaria.mejora_de_amatista": "Mejora De Amatista",
-      "item.desafosahuaria.reliquia_de_vida": "Reliquia De Vida",
+      "advancements.logro_16.descr": "Usa una Mejora de Amatista para mejorar una Azada, y luego piensa qué haces con tu vida.",
+      "advancements.logro_8.descr": "Conseguiste el Bastón de Amatista",
+      "advancements.logro_4.descr": "Conseguiste una Mejora de Netherite-Esmeralda",
+      "item.desafosahuaria.mejora_de_amatista": "Mejora de Amatista",
+      "item.desafosahuaria.reliquia_de_vida": "Reliquia de Vida",
       "advancements.logro_14.title": "Hermoso...",
+      "gui.desafosahuaria.muerte_1.efectomuerte": "Habilitar efecto de muerte",
       "advancements.logro_6.title": "+5",
-      "advancements.logo_12.descr": "Conseguiste la lanza de amatista",
-      "item.desafosahuaria.muerte": "Muerte",
-      "advancements.logro_3.title": "Fiebre de oro...",
-      "advancements.logro_11.title": "Desafío Sahuaripa v2",
-      "item.desafosahuaria.enderite_armor_set_helmet": "Casco de enderite",
+      "advancements.logo_12.descr": "You got the Amethyst Spear",
+      "advancements.logro_3.title": "Fiebre del Oro...",
+      "advancements.logro_11.title": "Eclipse",
+      "item.desafosahuaria.enderite_armor_set_helmet": "Casco de Enderite",
       "gui.desafosahuaria.muerte_1.muertetexto": "Titulo",
-      "item.desafosahuaria.baston_de_amatista": "Bastón de amatista"
+      "gui.desafosahuaria.muerte_2.piglinsspawn": "Piglin spawn",
+      "item.minecraft.splash_potion.effect.deconstruccion_pocion": "Poción Arrojadiza de Deconstrucción",
+      "item.desafosahuaria.baston_de_amatista": "ModPrueba"
     }
   },
   "foldersRoot": {
@@ -1412,7 +1942,7 @@
         "children": []
       },
       {
-        "name": "EventosMuerte",
+        "name": "EventosMuerte-Descartado",
         "children": [
           {
             "name": "GUIS",
@@ -1434,7 +1964,9 @@
     "serverSideOnly": false,
     "modPicture": "anxsah2",
     "requiredMods": [],
-    "dependencies": [],
+    "dependencies": [
+      "anexo_core"
+    ],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.4",

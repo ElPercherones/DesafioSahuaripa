@@ -33,7 +33,6 @@ public class DesafosahuariaModTabs {
 				builder -> builder.title(Component.translatable("item_group.desafosahuaria.desafio_sahuaripa_2")).icon(() -> new ItemStack(DesafosahuariaModItems.MEJORA_DE_AMATISTA.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DesafosahuariaModItems.PITAYADORADA.get());
 					tabData.accept(DesafosahuariaModItems.PESCADODEORO.get());
-					tabData.accept(DesafosahuariaModItems.BASTON_DE_AMATISTA.get());
 					tabData.accept(DesafosahuariaModItems.PITAYA.get());
 					tabData.accept(DesafosahuariaModItems.LANZA_DE_AMATISTA.get());
 					tabData.accept(DesafosahuariaModItems.RELIQUIA_DE_RESURRECION.get());
@@ -44,7 +43,10 @@ public class DesafosahuariaModTabs {
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_CHESTPLATE.get());
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_LEGGINGS.get());
 					tabData.accept(DesafosahuariaModItems.ENDERITE_ARMOR_SET_BOOTS.get());
-					tabData.accept(DesafosahuariaModItems.MUERTE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_AXE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_HOE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_PICKAXE.get());
+					tabData.accept(DesafosahuariaModItems.ENDERITE_SHOVEL.get());
 				})
 
 		);
